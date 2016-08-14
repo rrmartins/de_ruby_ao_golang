@@ -13,6 +13,7 @@ rodijme.me
 
 * Latest Versions
 
+
 ** Ruby
 
 - Language 2.3.1
@@ -25,6 +26,7 @@ rodijme.me
 
 * First Versions Stable
 
+
 ** Ruby
 
 .link https://www.ruby-forum.com/topic/205165 1996-12-25 1.0-961225
@@ -34,6 +36,7 @@ rodijme.me
 .link https://golang.org/doc/devel/release.html#go1 go1 (released 2012/03/28)
 
 * Control dependencies
+
 
 ** Ruby
 
