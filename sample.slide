@@ -11,4 +11,36 @@ rodijme.me
 - @rodijme
 - github.com/rrmartins
 
+* Latest Versions
+
+** Ruby
+
+- Language 2.3.1
+.link https://www.ruby-lang.org/en/news/2016/04/26/ruby-2-3-1-released/ ruby 2.3.1 released
+
+** Golang
+
+- Language 1.6
+.link https://blog.golang.org/go1.6 go1.6
+
+* First Versions Stable
+
+** Ruby
+
+.link https://www.ruby-forum.com/topic/205165 1996-12-25 1.0-961225
+
+** Golang
+
+.link https://golang.org/doc/devel/release.html#go1 go1 (released 2012/03/28)
+
+* Control dependencies
+
+** Ruby
+
+.link https://rvm.io/ rvm 1.26.11
+
+** Golang
+
+.link https://godoc.org/github.com/tools/godep godep v41 (darwin/amd64/go1.6.2)
+
 * Resumindo
