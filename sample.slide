@@ -1,4 +1,4 @@
-De Ruby ao Go
+De Ruby ao Golang
 
 Rodrigo Martins
 @rodijme
@@ -7,9 +7,32 @@ AutoSeg
 
 * Who Am I
 
+- Zim, Php, Clipper, Java, Python [...]
 - Rubista, new Gopher [...]
 - @rodijme
 - github.com/rrmartins
+
+* Ruby
+
+A language interpreted or compiled, depending on what particular implementation we're using.
+A dynamic, open source programming language with a focus on simplicity and productivity.
+It has an elegant syntax that is natural to read and easy to write. Focu in OOP
+
+.link https://www.ruby-lang.org/en/about/ About Ruby
+.link http://patshaughnessy.net/2012/2/15/is-ruby-interpreted-or-compiled Is Ruby interpreted or compiled?
+
+* Golang
+
+A language with paradigms functional, but implements something of "OOP".
+Go is expressive, concise, clean, and efficient. Its concurrency mechanisms make
+it easy to write programs that get the most out of multicore and networked machines,
+while its novel type system enables flexible and modular program construction.
+Go compiles quickly to machine code yet has the convenience of garbage collection
+and the power of run-time reflection. It's a fast, statically typed, compiled language
+that feels like a dynamically typed, interpreted language.
+
+.link https://golang.org/doc/
+.link http://pt.slideshare.net/GeisonFlores/functional-go-53256805 Functional go
 
 * Latest Versions
 
@@ -21,8 +44,8 @@ AutoSeg
 
 * Golang
 
-- Language 1.6
-.link https://blog.golang.org/go1.6 go1.6
+- Language 1.7
+.link https://golang.org/doc/go1.7 go1.7
 
 * First Versions Stable
 
@@ -40,10 +63,188 @@ AutoSeg
 
 * Ruby
 
+.link http://bundler.io/ bundler
+.link http://rubygems.org gems
+
+Version
 .link https://rvm.io/ rvm 1.26.11
 
 * Golang
 
 .link https://godoc.org/github.com/tools/godep godep v41 (darwin/amd64/go1.6.2)
 
-* Resumindo
+* Tests
+
+
+* Ruby
+
+.link https://github.com/rspec/rspec rspec
+.link https://github.com/seattlerb/minitest minitest
+.link https://github.com/jnicklas/capybara capybara
+.link https://cucumber.io/docs/reference/ruby cucumber
+[...]
+
+* Rspec
+
+.code test/basic_spec.rb
+
+* Rspec
+
+  rspec test/basic_spec.rb -f doc
+
+  Hash
+    should return a blank instance
+
+  Finished in 0.00185 seconds (files took 0.10242 seconds to load)
+  1 example, 0 failures
+
+* Golang
+
+.link https://golang.org/pkg/testing/ testing of standard library
+
+* Testing
+
+.code test/testing_test.go
+
+* Testing
+
+  go test -v ./...
+  === RUN   TestAverage
+  --- PASS: TestAverage (0.00s)
+  PASS
+  ok  	github.com/rrmartins/de_ruby_ao_golang/test	0.019s
+
+* Variables
+
+
+* Ruby
+
+  > i = 1
+  > puts i.class
+  => Fixnum
+  > i = "de ruby ao golang"
+  > puts i.class
+  => String
+
+* Golang
+
+Success
+.code variables_ok.go
+
+* Golang
+
+  $ go run variables_ok.go
+  The value of i is 4
+  The value of other_var is test_str
+
+* Golang
+
+Error
+.code variables_error.go
+
+* Golang
+
+  $ go run variables_error.go
+  # command-line-arguments
+  ./variables_error.go:10: cannot use "test with error" (type string) as type int in assignment
+
+more info:
+.link https://blog.golang.org/gos-declaration-syntax Go's Declaration Syntax
+
+* Functions / Methods
+
+
+* Ruby
+
+  def foo()
+    puts "hello world"
+  end
+
+  def bar(name)
+    puts "hello world, #{name}"
+  end
+
+  def foobar(name="Rodrigo")
+    puts "hello world, #{name}"
+  end
+
+* Ruby
+
+  > foo()
+  => hello world
+  > bar("Martins")
+  => hello world, Martins
+  > foobar()
+  => hello world, Rodrigo
+  > foobar("Rodrigo Martins")
+  => hello world, Rodrigo Martins
+
+* Golang
+
+.code function.go
+
+* Golang
+
+  $ go run function.go                                                                                                                  ✱ ◼
+  98
+  93
+  77
+  82
+  83
+
+more info:
+.link http://www.golang-book.com/books/intro/7 Golang Book Functions
+
+* Golang
+
+.code function1.go
+
+* Golang have't overloading. Why?
+
+Experience with other languages told us that having a variety of methods with
+the same name but different signatures was occasionally useful but that it could
+also be confusing and fragile in practice.
+more info:
+.link https://golang.org/doc/faq#overloading faq#overloading
+
+* Concurrency
+
+
+* Ruby
+
+In Ruby this subject no run well.
+Developers Ruby have many gems.
+
+read later:
+.link https://www.toptal.com/ruby/ruby-concurrency-and-parallelism-a-practical-primer Ruby Concurrency and Parallelism: A Practical Tutorial
+
+* Golang
+
+- Goroutines -> `go func ()`
+- Channels -> `make(chan type)`
+
+.link https://www.golang-book.com/books/intro/10 Concurrency - Goroutines | Channels
+
+* goroutines
+
+.code goroutines.go
+
+* channel
+
+.code channel.go
+
+
+* Project
+
+Tasks:
+- List
+- Delete
+- Update
+- Create
+
+Frontend: Ruby on Rails 5.0.0
+Backend: Go Native with gorm package
+
+* Summing up
+
+-
